@@ -13,18 +13,18 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-foundations/swift-domain-name-system.git",
+            url: "https://github.com/swift-compositions/swift-domain-name-system.git",
             branch: "main"
         ),
-        .package(url: "https://github.com/swift-foundations/swift-ip-address.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-ip-address.git", branch: "main"),
         .package(
-            url: "https://github.com/swift-foundations/swift-certificate-verification.git",
+            url: "https://github.com/swift-compositions/swift-certificate-verification.git",
             branch: "main"
         ),
-        .package(url: "https://github.com/swift-foundations/swift-io.git", branch: "main"),
-        .package(url: "https://github.com/swift-foundations/swift-sockets.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-io.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-sockets.git", branch: "main"),
         .package(
-            url: "https://github.com/swift-primitives/swift-span-primitives.git",
+            url: "https://github.com/swift-molecules/swift-span.git",
             branch: "main"
         ),
     ],
@@ -37,7 +37,7 @@ let package = Package(
                 .product(name: "Certificates", package: "swift-certificate-verification"),
                 .product(name: "IO", package: "swift-io"),
                 .product(name: "Sockets", package: "swift-sockets"),
-                .product(name: "Span Raw Primitives", package: "swift-span-primitives"),
+                .product(name: "Span Raw", package: "swift-span"),
             ]
         ),
         .target(

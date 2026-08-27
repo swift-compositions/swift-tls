@@ -1,6 +1,6 @@
 # swift-tls
 
-`TLS` is the engine-neutral TLS session and peer-policy surface for the Swift Foundations ecosystem.
+`TLS` is the engine-neutral TLS session and peer-policy surface for the Swift Compositions ecosystem.
 
 `TLS.Configuration` carries the selected DNS query, DNS hostname, and `TLS.PeerPolicy`. An engine must use that hostname for both handshake identity and peer authentication, then return a `TLS.Session`. The session is the only transport handed to HTTP and PostgreSQL providers: async read, write, and close.
 
