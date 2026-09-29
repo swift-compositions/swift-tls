@@ -23,10 +23,7 @@ let package = Package(
         ),
         .package(url: "https://github.com/swift-compositions/swift-io-kernel.git", branch: "main"),
         .package(url: "https://github.com/swift-compositions/swift-sockets.git", branch: "main"),
-        .package(
-            url: "https://github.com/swift-atoms/swift-span.git",
-            branch: "main"
-        ),
+        .package(url: "https://github.com/swift-atoms/swift-span.git", branch: "main", traits: ["Byte"]),
     ],
     targets: [
         .target(
@@ -37,7 +34,7 @@ let package = Package(
                 .product(name: "Certificates", package: "swift-certificate-verification"),
                 .product(name: "IO Kernel", package: "swift-io-kernel"),
                 .product(name: "Sockets", package: "swift-sockets"),
-                .product(name: "Span Raw", package: "swift-span"),
+                .product(name: "Span", package: "swift-span"),
             ]
         ),
         .target(
