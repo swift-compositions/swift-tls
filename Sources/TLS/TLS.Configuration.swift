@@ -17,7 +17,7 @@ extension TLS {
             self.peer = peer
         }
 
-        public func resolve<Resolver: DNS.Resolving>(
+        public func resolve<Resolver: DNS.Resolver.`Protocol`>(
             using resolver: Resolver
         ) async throws(Resolver.Failure) -> [IP.Address] {
             try await resolver.resolve(query)
